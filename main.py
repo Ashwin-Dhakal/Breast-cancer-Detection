@@ -9,7 +9,7 @@ df = pd.read_csv('breast-cancer-wisconsin.data.txt')
 df.replace('?', -9999, inplace = True)
 df.drop(['id'], 1, inplace=True)
 
-
+#to get one value defined on the supervised learning algorithm
 x = np.array(df.drop(['class'], 1))
 y = np.array(df['class'])
 
